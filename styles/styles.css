@@ -1,0 +1,218 @@
+@font-face {
+    font-family: Roboto;
+    src: url(./fonts/Roboto-Bold.ttf) format('ttf');
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    background-image: linear-gradient(173deg, #22313F 55%, #ffffff calc(55% + 1px));
+    display: flex;
+    justify-content: center;
+    height: 33%;
+    width: 100%;
+    /* max-height: 35%; */
+}
+
+.headerContent {
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 80%;
+}
+
+.profilePic {
+    width: 15%;
+    height: auto;
+    z-index: 1;
+}
+
+.aboutMeContainer {
+    width: 40%;
+    align-self: center;
+    background-color: white;
+    color: black;
+    padding: 15px;
+    box-shadow: 1px 1px 12px black;
+}
+.aboutMeContainer > .socials {
+    display: flex;
+    justify-content: end;
+}
+.myProjects {
+    max-width: 80%;
+    margin-bottom: 35px;
+    margin-top: 35px;
+    flex: 1;
+}
+
+.myProjects > h2 {
+    padding-left: 16px;
+}
+
+.projectCards {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.projectCards > div {
+    max-width: 30%;
+    margin: 10px;
+    box-shadow: 1px 1px 12px gray;
+    border-radius: 12px;
+}
+.projectImg {
+    width: 100%;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+.projectInfo {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.projectLinks {
+    width: 20px;
+}
+.projectLinks:hover, .socialLinks:hover {
+    transform: scale(1.1);
+}
+.projectLinks:active, .socialLinks:active {
+    transform: scale(0.9);
+}
+img {
+    width: 28px;
+}
+
+.footerInfo {
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+}
+
+.footerImg {
+    max-width: 15%;
+    width: auto;
+}
+
+.contactInfo {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer {
+    color: white;
+    width: 100%;
+    background-color: #22313F;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.emailInfo, .phoneNum {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1540px) {
+    .profilePic {
+        width: 25%;
+    }
+    .footerInfo {
+        width: 100%;
+    }
+    .footerImg {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        justify-content: space-between;
+    }
+    header {
+        width: 100%;
+        height: fit-content;
+        background-image: linear-gradient(160deg, #22313F 25%, #ffffff calc(25% + 1px));
+    }
+    .headerContent {
+        flex-direction: column;
+        width: 350px;
+    }
+    .profilePic {
+        width: 350px;
+        margin-bottom: 15px;
+        box-shadow: 1px 2px 10px black;
+    }
+    .aboutMeContainer {
+        box-shadow: none;
+        width: 350px;
+        font-size: 32px;
+        text-align: center;
+    }
+    .aboutMeContainer > .socials {
+        justify-content: center;
+        gap: 25px;
+    }
+    .aboutMeContainer > .socials > a > img {
+        width: 60px;
+    }
+    .myProjects {
+        display: flex;
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .myProjects > h2 {
+        font-size: 32px;
+    }
+    .projectCards {
+        flex-direction: column;
+        width: 100%;
+    }
+    .projectCards > div {
+        max-width: 80%;
+        margin: 10px;
+        box-shadow: 1px 1px 12px gray;
+    }
+    footer {
+        padding-bottom: 0;
+    }
+    .footerInfo {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactInfo {
+        width: 90%;
+        padding: 10px;
+        font-size: 22px;
+        text-align: center;
+        justify-content: center;
+    }
+    .contactInfo > .socials > a > img {
+        width: 60px;
+    }
+    .footerImg {
+        max-width: 100%;
+    }
+}
