@@ -79,11 +79,12 @@ header {
 .projectInfo {
     padding-left: 10px;
     padding-right: 10px;
+    text-align: center;
 }
 h3 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 .projectLinks {
     width: 20px;

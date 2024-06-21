@@ -30,6 +30,9 @@
     .aboutMeContainer > .socials > a > img {
         width: 60px;
     }
+    .aboutMePara {
+        font-size: 26px;
+    }
     .myProjects {
         display: flex;
         max-width: 100%;
